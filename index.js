@@ -5,20 +5,20 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const { default: axios } = require("axios");
 
-const users= [
-    {
-        id: "1",
-        name: "John",
-        age: 25,
-        email: "john@gmail.com"
-    },
-    {
-        id: "2",
-        name: "Jane",
-        age: 24,
-        email: "jane@gmail.com"
-    },
-]
+const users = [
+  {
+    id: "1",
+    name: "John",
+    age: 25,
+    email: "john@gmail.com",
+  },
+  {
+    id: "2",
+    name: "Jane",
+    age: 24,
+    email: "jane@gmail.com",
+  },
+];
 async function startApolloServer() {
   const app = express();
   app.use(bodyParser.json());
